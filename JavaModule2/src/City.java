@@ -7,6 +7,9 @@ public class City {
     int phoneCode;
     int cityIndex;
 
+    public City() {
+    }
+
     public City(String cityName, String region, String countryName, int phoneCode, int cityIndex) {
         this.cityName = cityName;
         this.region = region;
@@ -47,19 +50,39 @@ public class City {
         return cityName;
     }
 
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
+    }
+
     public String getRegion() {
         return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
     }
 
     public String getCountryName() {
         return countryName;
     }
 
+    public void setCountryName(String countryName) {
+        this.countryName = countryName;
+    }
+
     public int getPhoneCode() {
         return phoneCode;
     }
 
+    public void setPhoneCode(int phoneCode) {
+        this.phoneCode = phoneCode;
+    }
+
     public int getCityIndex() {
         return cityIndex;
+    }
+
+    public void setCityIndex(int cityIndex) {
+        this.cityIndex = cityIndex;
     }
 }

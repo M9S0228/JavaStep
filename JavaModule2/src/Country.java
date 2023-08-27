@@ -9,6 +9,9 @@ public class Country {
     String capital;
     private ArrayList<String> cityNames;
 
+    public Country() {
+    }
+
     public Country(String country, String continent, int countPeople, String capital, String cityName, String phoneCode) {
         this.country = country;
         this.phoneCode = phoneCode;
@@ -80,5 +83,29 @@ public class Country {
 
     public ArrayList<String> getCityNames() {
         return cityNames;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setContinent(String continent) {
+        this.continent = continent;
+    }
+
+    public void setCountPeople(int countPeople) {
+        this.countPeople = countPeople;
+    }
+
+    public void setPhoneCode(String phoneCode) {
+        this.phoneCode = phoneCode;
+    }
+
+    public void setCapital(String capital) {
+        this.capital = capital;
+    }
+
+    public void setCityNames(ArrayList<String> cityNames) {
+        this.cityNames = cityNames;
     }
 }

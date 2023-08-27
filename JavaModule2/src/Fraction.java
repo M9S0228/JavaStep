@@ -4,6 +4,9 @@ public class Fraction {
     private int numerator;
     private int denominator;
 
+    public Fraction() {
+    }
+
     public Fraction(int numerator, int denominator) {
         if (denominator == 0){
             throw new IllegalArgumentException("Знаменик не може бути 0");
@@ -21,6 +24,9 @@ public class Fraction {
 
         System.out.println("Введіть знаменик: ");
         denominator = scanner.nextInt();
+        if(denominator == 0 ){
+            System.out.println("Помилка! Знаменик не може бути 0");
+        }
     }
 
     public void simplify(){
@@ -40,6 +46,15 @@ public class Fraction {
     public int getDenominator() {
         return denominator;
     }
+
+    public void setNumerator(int numerator) {
+        this.numerator = numerator;
+    }
+
+    public void setDenominator(int denominator) {
+        this.denominator = denominator;
+    }
+
     public String toString() {
         return numerator + "/" + denominator;
     }
